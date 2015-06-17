@@ -18,6 +18,19 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
 
+
+{% highlight scss %}
+/* Site-wide */
+html {
+    -webkit-overflow-scrolling: touch; 
+    -webkit-tap-highlight-color: rgba(200,200,200,0.2); 
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%;
+    direction: ltr;
+    @include box-sizing(border-box);  // apply a natural box layout model to all elements
+}
+{% endhighlight %}
+
 Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
 
 [jekyll]:      http://jekyllrb.com
