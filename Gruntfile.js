@@ -110,7 +110,8 @@ module.exports = function (grunt) {
       options: {
         debugInfo: false,
         lineNumbers: false,
-        loadPath: 'app/_bower_components'
+        loadPath: 'app/_bower_components',
+        require: 'sass-css-importer',
       },
       dist: {
         files: [{
@@ -245,11 +246,9 @@ module.exports = function (grunt) {
             '_img/**/*',
             '_fonts/**/*',
             // Like Jekyll, exclude files & folders prefixed with an underscore.
-            '!**/_*{,/**}'
+            '!**/_*{,/**}',
             // Explicitly add any files your site needs for distribution here.
-            //'_bower_components/jquery/jquery.min.js',
-            //'favicon.ico',
-            //'apple-touch*.png'
+            // '_bower_components/skeleton-css/'
           ],
           dest: '<%= yeoman.dist %>'
         }]

@@ -10,7 +10,7 @@ You now have
 
 - Jekyll
 - Sass
-- kramdown markdown parser and Pygments highlighter
+- kramdown markdown parser
 
 installed.
 

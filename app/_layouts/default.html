@@ -8,28 +8,47 @@
 
         <!-- build:css({app,.tmp}) /_css/main.css -->
         <!-- Custom CSS -->
+        <link rel="stylesheet" href="/_bower_components/skeleton-css/css/normalize.css">
+        <link rel="stylesheet" href="/_bower_components/skeleton-css/css/skeleton.css">
         <link rel="stylesheet" href="/_css/main.css">
         <!-- endbuild -->
 
     </head>
     <body>
 
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
+        <div class="container">
+          <div>
+            <h1><a href="/">{{ site.name }}</a></h1>
+            <a href="/">home</a> - 
+            <a href="/projects">projects</a> - 
+            <a href="/json">json</a>
           </div>
 
-          {{ content }}
+          <hr>
 
-          <div class="footer">
-            <div class="contact">
+          
+          <div class="row">
+            <div class="nine columns">{{ content }}</div>
+            <div class="three columns">
+              {% for post in site.posts %}
+                <a href="{{ post.url }}">{{ post.title }}</a>
+                <p>
+                  <span>{{ post.author }}</span>
+                  <span>{{ post.date }}</span>
+                </p>
+              {% endfor %}
+            </div>
+          </div>
+
+          <hr>
+
+          <div>
+            <div>
               <p>
-                Pierre Luc Nichols<br />
-                <a href="mailto:pierrelucnichols@gmail.com">pierrelucnichols@gmail.com</a>
+                Pierre Luc Nichols - <a href="mailto:pierrelucnichols@gmail.com">pierrelucnichols@gmail.com</a>
               </p>
             </div>
-            <div class="contact">
+            <div>
               <p>
                 <a href="https://github.com/yourusername">github.com/yourusername</a><br />
                 <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
