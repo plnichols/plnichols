@@ -4,11 +4,16 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1>Hi.</h1>
+  <h2>I'm Pierre Luc Nichols,</h2>
+  <h3>Front End Developer</h3>
+  <h4>currently contracting in London, UK.</h4>
 
+  {% comment %}
   {% for post in site.posts %}
       <h4><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
       <p><strong><em><small>({{ post.date | date: "%b %-d, %Y" }})</small></em></strong> {{ post.excerpt | strip_html }}</p>
   {% endfor %}
+  {% endcomment %}
 
 </div>
