@@ -7,23 +7,32 @@ Styles
 
 body {
     background-color: #666;
+    margin-top: 30%;
+    transition: margin-top 0.5s;
+    @include media-query($mq-xsmall){
+        margin-top: 25%;
+    }
+    @include media-query($mq-small){
+        margin-top: 20%;
+    }
+    @include media-query($mq-medium){
+        margin-top: 16%;
+    }
+    @include media-query($mq-large){
+        margin-top: 12%;
+    }
+    @include media-query($mq-xlarge){
+        margin-top: 8%;
+    }
 }
 
 .container {
     max-width: 1200px;
-}
-
-/* For devices larger than 400px */
-@media (min-width: 400px) {
-    .container {
+    @include media-query($mq-xsmall){
         width: 95%;
     }
-}
-
-/* For devices larger than 550px */
-@media (min-width: 550px) {
-    .container {
-        width: 90%; 
+    @include media-query($mq-small){
+        width: 90%;
     }
 }
 
@@ -33,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 10em;
+    font-size: 14em;
     font-size: 16vw;
 }
 
@@ -43,13 +52,13 @@ h2 {
 }
 
 h3 {
-    font-size: 6em;
-    font-size: 7vw;
+    font-size: 5em;
+    font-size: 6vw;
 }
 
 h4 {
-    font-size: 4em;
-    font-size: 3.5vw;
+    font-size: 2.5em;
+    font-size: 3vw;
 }
 
 h5 {
@@ -58,4 +67,8 @@ h5 {
 
 h5 {
     font-size: 1.6em;
+}
+
+a {
+    transition: color 0.1s ease-in;
 }

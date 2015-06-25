@@ -14,19 +14,24 @@
   </head>
   <body>
 
-    <header>
-      <ul class="menu row">
-        <li class="menu__item"><a class="menu__link" href="/">about</a></li>
-        <li class="menu__item"><a class="menu__link" href="#skills">skills</a></li>
-        <li class="menu__item"><a class="menu__link" href="/projects">projects</a></li>
-        <li class="menu__item"><a class="menu__link" href="/blog">blog</a></li>
-        <li class="menu__item"><a class="menu__link" href="#contact">contact me</a></li>
+    <header class="header">
+      <ul class="header__list row">
+        <li class="header__item"><a class="header__link" href="/">about</a></li>
+        <li class="header__item"><a class="header__link" href="#skills">skills</a></li>
+        <li class="header__item"><a class="header__link" href="/projects">projects</a></li>
+        <li class="header__item"><a class="header__link" href="/blog">blog</a></li>
+        <li class="header__item"><a class="header__link" href="#contact">contact me</a></li>
       </ul>
     </header>
 
+    <div class="hamburger">
+      <span class="hamburger__menu icon-menu"></span>
+      <span class="hamburger__cross icon-cross"></span>
+    </div>
+
     <div class="container">
       <div class="row">
-        <div>{{ content }}</div>
+        {{ content }}
       </div>
       
       <!-- <div class="row">

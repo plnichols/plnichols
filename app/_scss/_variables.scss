@@ -11,6 +11,9 @@ $base-font-size: 16px;
 $base-line-height: 1.5;
 $spacing-unit: 30px;
 
+// Animation
+$fast-in: cubic-bezier(0.4, 0, 0.2, 1);
+
 // Colors
 $text-color: #111;
 $background-color: #fdfdfd;
@@ -21,6 +24,9 @@ $grey-color: #828282;
 $content-width: 1200px;
 
 // Media queries
-$on-palm: 600px;
-$on-laptop: 800px;
+$mq-xsmall: 400px; /* Larger than mobile */
+$mq-small: 550px; /* Larger than phablet (also point when grid becomes active) */
+$mq-medium: 750px; /* Larger than tablet */
+$mq-large: 1000px; /* Larger than desktop */
+$mq-xlarge: 1200px; /* Larger than Desktop HD */
 
