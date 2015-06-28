@@ -5,8 +5,18 @@ Styles
 */
 
 
+html {
+    box-sizing: border-box;
+}
+
+*, 
+*:before, 
+*:after {
+    box-sizing: inherit;  // allow components to change box layout
+}
+
 body {
-    background-color: #666;
+    background-color: $background-color;
     margin-top: 30%;
     transition: margin-top 0.5s;
     @include media-query($mq-xsmall){

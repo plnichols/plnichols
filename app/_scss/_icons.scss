@@ -9,7 +9,7 @@
 	font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"], [class*=" icon-"], .icon-extend {
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
@@ -23,6 +23,9 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-chevron-down:before {
+	content: "\e601";
+}
 .icon-menu:before {
 	content: "\e600";
 }
