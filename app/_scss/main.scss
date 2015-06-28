@@ -8,17 +8,21 @@
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import "syntax-highlighting";
-@import "variables";
-@import "mixins";
-@import "utilities";
-@import "icons";
-@import "styles";
-@import "header";
-@import "footer";
-@import "homepage";
-@import "hamburger";
-@import "separator";
+// Core
+@import "core/variables";
+@import "core/utilities";
+@import "core/mixins";
+@import "core/syntax-highlighting";
+@import "core/icons";
+@import "core/styles";
+
+// Components
+@import "components/header";
+@import "components/footer";
+@import "components/homepage";
+@import "components/hamburger";
+@import "components/separator";
+@import "components/skills";
 
 
 

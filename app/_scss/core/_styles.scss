@@ -19,6 +19,7 @@ body {
     background-color: $background-color;
     margin-top: 30%;
     transition: margin-top 0.5s;
+    color: #ddd;
     @include media-query($mq-xsmall){
         margin-top: 25%;
     }
