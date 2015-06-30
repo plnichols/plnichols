@@ -13,7 +13,7 @@ Header
     width: 100%;
     background-color: rgba(108, 108, 108, 0.98);
     border-bottom: 1px solid rgba(120, 120, 120, 0.98);
-    transform: translateY(-76%);
+    transform: translateY(-60%);
     transition: transform 0.4s $fast-in;
     z-index: 1;
     &.header--active {

@@ -6,8 +6,19 @@ Footer
 
 
 footer {
-    margin: 300px 0 100px;
+    font-size: 12px;
+    margin: 100px 0 0 0;
+    padding: 30px;
+    color: #999;
     text-align: center;
+    background-color: #555;
+    a {
+    	color: #888;
+    	&:focus,
+    	&:hover {
+    		color: #aaa;
+    	}
+    }
 }
 
 
