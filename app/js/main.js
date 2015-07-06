@@ -34,7 +34,7 @@ var app = {
       app.toggleClass(hamburger, 'hamburger--active');
     }, false);
   }
-}
+};
 
 
 // init
