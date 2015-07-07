@@ -9,32 +9,15 @@ html {
     box-sizing: border-box;
 }
 
-*, 
-*:before, 
+*,
+*:before,
 *:after {
     box-sizing: inherit;  // allow components to change box layout
 }
 
 body {
     background-color: $background-color;
-    margin-top: 30%;
-    transition: margin-top 0.5s;
     color: #ddd;
-    @include media-query($mq-xsmall){
-        margin-top: 25%;
-    }
-    @include media-query($mq-small){
-        margin-top: 20%;
-    }
-    @include media-query($mq-medium){
-        margin-top: 16%;
-    }
-    @include media-query($mq-large){
-        margin-top: 12%;
-    }
-    @include media-query($mq-xlarge){
-        margin-top: 8%;
-    }
 }
 
 .container {
@@ -92,14 +75,11 @@ input[type="button"] {
     &.button-primary {
         transition: background-color 0.1s ease-in, border-color 0.1s ease-in;
         background-color: $brand-color;
-        border-color: $brand-color; 
+        border-color: $brand-color;
         &:hover,
         &:focus {
           background-color: darken($brand-color, 5%);
-          border-color: darken($brand-color, 3%); 
+          border-color: darken($brand-color, 3%);
         }
     }
 }
-
-
-
