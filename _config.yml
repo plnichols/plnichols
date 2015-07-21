@@ -11,9 +11,9 @@ author:
 
 # Grunt handles images and assets.
 exclude: ['bower_components', 'scss', 'css', 'js', 'fonts', 'pdf', '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']
-include: ['.htaccess']
+include: ['.htaccess', 'CNAME']
 
-# _config.build.yml sets future and show_drafts to false on `grunt build` 
+# _config.build.yml sets future and show_drafts to false on `grunt build`
 future: true
 show_drafts: true
 

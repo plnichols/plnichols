@@ -274,9 +274,9 @@ module.exports = function (grunt) {
             'fonts/**/*',
             'pdf/**/*',
             // Like Jekyll, exclude files & folders prefixed with an underscore.
-            '!**/_*{,/**}',
+            '!**/_*{,/**}'
             // Explicitly add any files your site needs for distribution here.
-            // 'bower_components/skeleton-css/'
+            // 'CNAME'
           ],
           dest: '<%= yeoman.dist %>'
         }]
