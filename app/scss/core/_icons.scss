@@ -23,69 +23,84 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-git:before {
+    content: "\e60e";
+}
+.icon-grunt:before {
+    content: "\e614";
+}
+.icon-angular:before {
+    content: "\e60a";
+}
+.icon-codepen:before {
+    content: "\e60b";
+}
+.icon-sass:before {
+    content: "\e60c";
+}
 .icon-css:before {
-	content: "\ea0f";
+    content: "\e60d";
 }
 .icon-html:before {
-	content: "\ea10";
+    content: "\ea10";
 }
 .icon-js:before {
-	content: "\e602";
+    content: "\e602";
 }
 .icon-jquery:before {
-	content: "\e603";
+    content: "\e603";
 }
 .icon-php:before {
-	content: "\e605";
+    content: "\e605";
 }
 .icon-database:before {
-	content: "\e604";
+    content: "\e604";
 }
 .icon-desktop:before {
-	content: "\e606";
+    content: "\e606";
 }
 .icon-laptop:before {
-	content: "\e601";
+    content: "\e601";
 }
 .icon-tablet:before {
-	content: "\e607";
+    content: "\e607";
 }
 .icon-mobile:before {
-	content: "\e608";
+    content: "\e608";
 }
 .icon-chevron-down:before {
-	content: "\e609";
+    content: "\e609";
 }
 .icon-menu:before {
-	content: "\e600";
+    content: "\e600";
 }
 .icon-plus:before {
-	content: "\ea0a";
+    content: "\ea0a";
 }
 .icon-minus:before {
-	content: "\ea0b";
+    content: "\ea0b";
 }
 .icon-cross:before {
-	content: "\ea11";
+    content: "\ea11";
 }
 .icon-checkmark:before {
-	content: "\ea12";
+    content: "\ea12";
 }
 .icon-home:before {
-	content: "\e900";
+    content: "\e900";
 }
 .icon-facebook:before {
-	content: "\ea8d";
+    content: "\ea8d";
 }
 .icon-twitter:before {
-	content: "\ea92";
+    content: "\ea92";
 }
 .icon-linkedin:before {
-	content: "\eac8";
+    content: "\eac8";
 }
-.icon-google-plus:before {
-	content: "\ea89";
+.icon-google:before {
+    content: "\ea89";
 }
 .icon-github:before {
-	content: "\eab4";
+    content: "\eab4";
 }

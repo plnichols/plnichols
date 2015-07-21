@@ -5,11 +5,32 @@ Skills
 */
 
 
-.skills {}
+.skills {
+    h2 {
+        padding-top: 80px;
+    }
+    h3 {
+        margin-bottom: 0;
+    }
+}
+
+.skills__list {
+    @extend .clearfix;
+}
 
 .skills__item {
     display: flex;
     margin: 50px 0 10px;
+    @include media-query($mq-small) {
+        width: 45%;
+        float: left;
+        &:nth-child(2n-1) {
+            clear: both;
+        }
+        &:nth-child(2n) {
+            float: right;
+        }
+    }
 }
 
 .skills__logo {
@@ -17,14 +38,17 @@ Skills
     font-size: 70px;
     margin: 0 8px 0 -10px;
     color: #999;
-    &.icon-css {
-        margin-top: -6px;
-    }
     &.icon-js {
         margin-top: -10px;
     }
     &.icon-mobile {
         margin-top: 2px;
+    }
+    &.icon-sass {
+        margin-top: -10px;
+    }
+    &.icon-angular {
+        margin-top: -2px;
     }
 }
 
@@ -32,6 +56,7 @@ Skills
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 2px;
+    color: #fff;
 }
 
 .skills__info {
@@ -47,7 +72,7 @@ Skills
 
 .skills__progress-bar {
     width: 100%;
-    height: 8px;    
+    height: 8px;
     appearance: none;
     border: none;
     background-color: #555;
