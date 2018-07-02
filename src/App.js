@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { Title, Wrapper } from './App.styles';
 
@@ -26,13 +26,29 @@ const BasicExample = () => (
   </Router>
 );
 
-const Home = () => (
-  <div>
-    <Wrapper>
-      <Title>Home</Title>
-    </Wrapper>
-  </div>
-);
+class Home extends Component {
+  constructor(props) {
+    super(props);
+
+    fetch('/posts')
+      .then(response => {
+        return response.json();
+      })
+      .then(response => {
+        console.log(response);
+      });
+  }
+
+  render() {
+    return (
+      <div>
+        <Wrapper>
+          <Title>Home</Title>
+        </Wrapper>
+      </div>
+    );
+  }
+}
 
 const About = () => (
   <div>
