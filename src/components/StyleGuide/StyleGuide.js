@@ -1,14 +1,14 @@
 import React from 'react';
-// import { Title, Wrapper } from './StyleGuide.styles';
+import { Heading, List, ListItem } from '../../components';
 
 const StyleGuide = ({ title }) => (
   <div>
-    <h1>H1 {title}</h1>
-    <h2>H2 Aenean commodo ligula eget dolor aenean massa</h2>
-    <h3>H3 Aedolor aenean massa</h3>
-    <h4>H4 Aeo ligula eget dolor aenean massa</h4>
-    <h5>H5 Aeget dolor aenean massa</h5>
-    <h6>H6 Digula eget dolor aenean massa</h6>
+    <Heading h1>H1 Lorem ipsum sit dolor</Heading>
+    <Heading h2>H2 Aenean commodo li</Heading>
+    <Heading h3>H3 Aedolor aenean massa</Heading>
+    <Heading h4>H4 Aeo ligula eget do massa</Heading>
+    <Heading h5>H5 Aeget dolor assa</Heading>
+    <Heading h6>H6 Digula eget dolor ae</Heading>
 
     <p>
       Paragraph lorem ipsum dolor sit amet, <em>adipiscing elit</em>. Aenean
@@ -49,31 +49,43 @@ const StyleGuide = ({ title }) => (
       <input type="button" value="button input" />
     </p>
 
-    <ul>
-      <li>
+    <List>
+      <ListItem>
         Lorem ipsum dolor
-        <ul>
-          <li>Item 1.1</li>
-          <li>Item 1.2</li>
-        </ul>
-      </li>
-      <li>Aenean commodo ligula eget dolor.</li>
-      <li>Aenean massa cum sociis natoque penatibus.</li>
-    </ul>
+        <List>
+          <ListItem>Item 1.1</ListItem>
+          <ListItem>
+            Item 1.2
+            <List>
+              <ListItem>Item 1.2.1</ListItem>
+              <ListItem>Item 1.2.2</ListItem>
+            </List>
+          </ListItem>
+        </List>
+      </ListItem>
+      <ListItem>Aenean commodo ligula eget dolor.</ListItem>
+      <ListItem>Aenean massa cum sociis natoque penatibus.</ListItem>
+    </List>
 
-    <ol>
-      <li>Lorelor sit amet consectetuer.</li>
-      <li>Aenean commodo ligula eget dolor.</li>
-      <li>
+    <List ordered>
+      <ListItem>Lorelor sit amet consectetuer.</ListItem>
+      <ListItem>Aenean commodo ligula eget dolor.</ListItem>
+      <ListItem>
         Sdo ligula eget dolor:
-        <ol>
-          <li>Item 3.1</li>
-          <li>Item 3.2</li>
-          <li>Item 3.3</li>
-        </ol>
-      </li>
-      <li>Aeneum sociis natoque penatibus.</li>
-    </ol>
+        <List ordered>
+          <ListItem>Item 3.1</ListItem>
+          <ListItem>
+            Item 3.2
+            <List ordered>
+              <ListItem>Item 3.2.1</ListItem>
+              <ListItem>Item 3.2.2</ListItem>
+            </List>
+          </ListItem>
+          <ListItem>Item 3.3</ListItem>
+        </List>
+      </ListItem>
+      <ListItem>Aeneum sociis natoque penatibus.</ListItem>
+    </List>
 
     <form action="#post" method="post">
       <fieldset>
