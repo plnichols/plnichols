@@ -1,60 +1,53 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import { Title, Wrapper } from './App.styles';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { Home, StyleGuide, Test, Theme } from './components';
+import { AppStyled } from './App.styles';
 
-const BasicExample = () => (
-  <Router>
-    <div>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/topics">Topics</Link>
-        </li>
-      </ul>
-
-      <hr />
-
-      <Route exact path="/" component={Home} />
-      <Route path="/about" component={About} />
-      <Route path="/topics" component={Topics} />
-    </div>
-  </Router>
-);
-
-class Home extends Component {
-  constructor(props) {
-    super(props);
-
-    fetch('/posts')
-      .then(response => {
-        return response.json();
-      })
-      .then(response => {
-        console.log(response);
-      });
-  }
+class App extends Component {
+  // constructor(props) {
+  //   super(props);
+  //
+  //   fetch('/posts')
+  //     .then(response => {
+  //       return response.json();
+  //     })
+  //     .then(response => {
+  //       console.log(response);
+  //     })
+  //     .catch(err => {
+  //       console.log(err);
+  //     });
+  // }
 
   render() {
     return (
-      <div>
-        <Wrapper>
-          <Title>Home</Title>
-        </Wrapper>
-      </div>
+      <BrowserRouter>
+        <AppStyled>
+          <Theme />
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/styleguide">Style Guide</Link>
+            </li>
+            <li>
+              <Link to="/topics">Topics</Link>
+            </li>
+            <li>
+              <Link to="/test">Test</Link>
+            </li>
+          </ul>
+
+          <Route exact path="/" component={Home} />
+          <Route path="/styleguide" component={StyleGuide} />
+          <Route path="/topics" component={Topics} />
+          <Route path="/test" component={Test} />
+        </AppStyled>
+      </BrowserRouter>
     );
   }
 }
-
-const About = () => (
-  <div>
-    <h2>About</h2>
-  </div>
-);
 
 const Topics = ({ match }) => (
   <div>
@@ -86,4 +79,4 @@ const Topic = ({ match }) => (
   </div>
 );
 
-export default BasicExample;
+export default App;
