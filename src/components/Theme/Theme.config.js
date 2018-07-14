@@ -1,4 +1,4 @@
-export const colors = {
+export const color = {
   bg: '#fcfcfc',
   text: '#222',
   textLight: '#fff',
@@ -12,4 +12,10 @@ export const colors = {
   secondary: '#880e4f',
   secondaryLight: '#bc477b',
   secondaryDark: '#560027'
+};
+
+export const font = {
+  base: '"Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  serif: 'serif',
+  monospace: 'monospace'
 };
