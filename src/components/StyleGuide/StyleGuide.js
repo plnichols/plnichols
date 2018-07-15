@@ -1,5 +1,5 @@
 import React from 'react';
-import { Divider, Heading, List, ListItem } from 'components';
+import { Button, Divider, Heading, List, ListItem } from 'components';
 
 const StyleGuide = () => (
   <div>
@@ -41,18 +41,56 @@ const StyleGuide = () => (
     </p>
 
     <Divider />
-
     <p>
-      <a href="#anchor">Anchor button</a>
+      <Button primary>Primary button</Button>&nbsp;&nbsp;
+      <Button outline>Outline button</Button>
     </p>
     <p>
-      <button>Button element</button>
+      <Button secondary>Secondary button</Button>&nbsp;&nbsp;
+      <Button secondary outline>
+        Outline button
+      </Button>
     </p>
     <p>
-      <input type="submit" value="submit input" />
+      <Button disabled>Disabled button</Button>&nbsp;&nbsp;
+      <Button disabled outline>
+        Outline button
+      </Button>
     </p>
     <p>
-      <input type="button" value="button input" />
+      <Button small>Small button</Button>&nbsp;&nbsp;
+      <Button small outline>
+        Outline button
+      </Button>
+    </p>
+    <p>
+      <Button large>Large button</Button>&nbsp;&nbsp;
+      <Button large outline>
+        Outline button
+      </Button>
+    </p>
+    <p>
+      <Button rounded>Rounded button</Button>&nbsp;&nbsp;
+      <Button rounded outline>
+        Outline button
+      </Button>
+    </p>
+    <p>
+      <Button rounded small>
+        Rounded button
+      </Button>&nbsp;&nbsp;
+      <Button rounded small outline>
+        Outline button
+      </Button>
+    </p>
+    <p>
+      <Button type="submit">Submit</Button>&nbsp;&nbsp;
+      <Button type="reset">Reset</Button>
+    </p>
+    <p>
+      <Button anchor href="#anchor">
+        Anchor link
+      </Button>
     </p>
 
     <Divider />
