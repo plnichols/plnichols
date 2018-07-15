@@ -9,9 +9,9 @@ export const color = {
   primary: '#01579b',
   primaryLight: '#4f83cc',
   primaryDark: '#002f6c',
-  secondary: '#880e4f',
-  secondaryLight: '#bc477b',
-  secondaryDark: '#560027'
+  secondary: '#c51162',
+  secondaryLight: '#fd558f',
+  secondaryDark: '#8e0038'
 };
 
 export const font = {
