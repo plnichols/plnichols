@@ -1,7 +1,7 @@
 import React from 'react';
-import { Heading, List, ListItem } from '../../components';
+import { Divider, Heading, List, ListItem } from 'components';
 
-const StyleGuide = ({ title }) => (
+const StyleGuide = () => (
   <div>
     <Heading h1>H1 Lorem ipsum sit dolor</Heading>
     <Heading h2>H2 Aenean commodo li</Heading>
@@ -9,6 +9,8 @@ const StyleGuide = ({ title }) => (
     <Heading h4>H4 Aeo ligula eget do massa</Heading>
     <Heading h5>H5 Aeget dolor assa</Heading>
     <Heading h6>H6 Digula eget dolor ae</Heading>
+
+    <Divider />
 
     <p>
       Paragraph lorem ipsum dolor sit amet, <em>adipiscing elit</em>. Aenean
