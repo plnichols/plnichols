@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Title, Wrapper } from './Home.styles';
 
 const Home = () => {
   return (
