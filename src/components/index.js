@@ -1,12 +1,10 @@
 // pages
-export { Home } from './Home/Home.js';
-export { StyleGuide } from './StyleGuide/StyleGuide.js';
-export { Test } from './Test/Test.js';
+export { Home } from './Home/Home';
+export { StyleGuide } from './StyleGuide/StyleGuide';
+export { Test } from './Test/Test';
 
 // components
-export { Heading } from './Heading/Heading.js';
-export { List } from './List/List.js';
-export { ListItem } from './ListItem/ListItem.js';
-
-// other
-export { Theme } from './Theme/Theme.js';
+export { Divider } from './Divider/Divider';
+export { Heading } from './Heading/Heading';
+export { List } from './List/List';
+export { ListItem } from './ListItem/ListItem';
