@@ -1,8 +1,8 @@
 import React from 'react';
 import { DividerStyled } from './Divider.styles';
 
-const Divider = () => {
-  return <DividerStyled />;
+const Divider = ({ size }) => {
+  return <DividerStyled size={size} />;
 };
 
 export { Divider };

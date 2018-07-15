@@ -3,6 +3,8 @@ import { Divider, Heading, List, ListItem } from 'components';
 
 const StyleGuide = () => (
   <div>
+    <Divider />
+
     <Heading h1>H1 Lorem ipsum sit dolor</Heading>
     <Heading h2>H2 Aenean commodo li</Heading>
     <Heading h3>H3 Aedolor aenean massa</Heading>
@@ -20,6 +22,8 @@ const StyleGuide = () => (
       <u>Integer tincids nisi</u>.
     </p>
 
+    <Divider />
+
     <p>
       <span style={{ fontWeight: 100 }}>font weight 100</span>
     </p>
@@ -36,7 +40,7 @@ const StyleGuide = () => (
       <span style={{ fontWeight: 900 }}>font weight 900</span>
     </p>
 
-    <blockquote>Blockquote ipsum sit dolor amsr.</blockquote>
+    <Divider />
 
     <p>
       <a href="#anchor">Anchor button</a>
@@ -50,6 +54,8 @@ const StyleGuide = () => (
     <p>
       <input type="button" value="button input" />
     </p>
+
+    <Divider />
 
     <List>
       <ListItem>
@@ -68,6 +74,8 @@ const StyleGuide = () => (
       <ListItem>Aenean commodo ligula eget dolor.</ListItem>
       <ListItem>Aenean massa cum sociis natoque penatibus.</ListItem>
     </List>
+
+    <Divider />
 
     <List ordered>
       <ListItem>Lorelor sit amet consectetuer.</ListItem>
@@ -88,6 +96,8 @@ const StyleGuide = () => (
       </ListItem>
       <ListItem>Aeneum sociis natoque penatibus.</ListItem>
     </List>
+
+    <Divider />
 
     <form action="#post" method="post">
       <fieldset>
@@ -125,7 +135,11 @@ const StyleGuide = () => (
       </fieldset>
     </form>
 
+    <Divider />
+
     <pre>console.log('hello');</pre>
+
+    <Divider />
 
     <table>
       <thead>
