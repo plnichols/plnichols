@@ -3,8 +3,6 @@ import { Button, Divider, Heading, List, ListItem } from 'components';
 
 const StyleGuide = () => (
   <div>
-    <Divider />
-
     <Heading h1>H1 Lorem ipsum sit dolor</Heading>
     <Heading h2>H2 Aenean commodo li</Heading>
     <Heading h3>H3 Aedolor aenean massa</Heading>
@@ -48,6 +46,12 @@ const StyleGuide = () => (
     <p>
       <Button secondary>Secondary button</Button>&nbsp;&nbsp;
       <Button secondary outline>
+        Outline button
+      </Button>
+    </p>
+    <p>
+      <Button white>White button</Button>&nbsp;&nbsp;
+      <Button white outline>
         Outline button
       </Button>
     </p>

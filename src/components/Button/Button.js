@@ -4,6 +4,7 @@ import { ButtonStyled, AnchorStyled } from './Button.styles';
 const Button = ({
   primary,
   secondary,
+  white,
   rounded,
   disabled,
   outline,
@@ -19,6 +20,7 @@ const Button = ({
     <Component
       {...primary && { primary }}
       {...secondary && { secondary }}
+      {...white && { white }}
       {...rounded && { rounded }}
       {...disabled && { disabled }}
       {...outline && { outline }}
