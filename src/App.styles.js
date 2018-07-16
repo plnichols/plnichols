@@ -11,6 +11,8 @@ injectGlobal`
   }
   
   body {
+    margin: 0;
+    padding: 0;
     font-size: 1.6em;
     line-height: 1.6;
     font-weight: 400;
@@ -21,7 +23,16 @@ injectGlobal`
 `;
 
 const AppStyled = styled.div`
-  padding: 20px;
+  position: relative;
+  min-height: 100vh;
+  background: ${color.primary.base};
+  background: linear-gradient(
+    0deg,
+    ${color.primary.l800} 0%,
+    ${color.primary.base} 10%,
+    ${color.primary.base} 70%,
+    ${color.primary.dark} 100%
+  );
 `;
 
 export { AppStyled };

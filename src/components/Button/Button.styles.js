@@ -11,25 +11,39 @@ const ButtonStyled = styled.button`
   line-height: 2;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: ${color.primary};
+  background-color: ${color.primary.base};
   border-radius: 4px;
-  border: 1px solid ${color.primary};
+  border: 1px solid ${color.primary.base};
   cursor: pointer;
 
   &:hover {
-    background-color: ${color.primaryDark};
-    border-color: ${color.primaryDark};
+    background-color: ${color.primary.dark};
+    border-color: ${color.primary.dark};
   }
 
   ${props =>
     props.secondary &&
     css`
-      background-color: ${color.secondary};
-      border-color: ${color.secondary};
+      background-color: ${color.secondary.base};
+      border-color: ${color.secondary.base};
 
       &:hover {
-        background-color: ${color.secondaryDark};
-        border-color: ${color.secondaryDark};
+        background-color: ${color.secondary.dark};
+        border-color: ${color.secondary.dark};
+      }
+    `};
+
+  ${props =>
+    props.white &&
+    css`
+      color: ${props.secondary ? color.secondary.base : color.primary.base};
+      background-color: white;
+      border-color: white;
+
+      &:hover {
+        color: ${props.secondary ? color.secondary.dark : color.primary.dark};
+        background-color: white;
+        border-color: white;
       }
     `};
 
@@ -37,15 +51,29 @@ const ButtonStyled = styled.button`
     props.outline &&
     css`
       background-color: transparent;
-      color: ${props.secondary ? color.secondary : color.primary};
-      border-color: ${props.secondary ? color.secondary : color.primary};
+      color: ${props.white
+        ? 'white'
+        : props.secondary
+          ? color.secondary.base
+          : color.primary.base};
+      border-color: ${props.white
+        ? 'white'
+        : props.secondary
+          ? color.secondary.base
+          : color.primary.base};
 
       &:hover {
         background-color: transparent;
-        color: ${props.secondary ? color.secondaryDark : color.primaryDark};
-        border-color: ${props.secondary
-          ? color.secondaryDark
-          : color.primaryDark};
+        color: ${props.white
+          ? 'white'
+          : props.secondary
+            ? color.secondary.dark
+            : color.primary.dark};
+        border-color: ${props.white
+          ? 'white'
+          : props.secondary
+            ? color.secondary.dark
+            : color.primary.dark};
       }
     `};
 

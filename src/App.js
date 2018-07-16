@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import { Home, StyleGuide } from 'pages';
+import { Nav, Content } from 'components';
 import { AppStyled } from './App.styles';
 
 class App extends Component {
@@ -23,21 +24,12 @@ class App extends Component {
     return (
       <BrowserRouter>
         <AppStyled>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/styleguide">Style Guide</Link>
-            </li>
-            <li>
-              <Link to="/topics">Topics</Link>
-            </li>
-          </ul>
-
-          <Route exact path="/" component={Home} />
-          <Route path="/styleguide" component={StyleGuide} />
-          <Route path="/topics" component={Topics} />
+          <Nav />
+          <Content>
+            <Route exact path="/" component={Home} />
+            <Route path="/styleguide" component={StyleGuide} />
+            <Route path="/topics" component={Topics} />
+          </Content>
         </AppStyled>
       </BrowserRouter>
     );
