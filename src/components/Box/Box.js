@@ -1,23 +1,7 @@
 import React from 'react';
 import { BoxStyled } from './Box.styles';
 
-const Box = ({
-  m,
-  mx,
-  my,
-  mt,
-  mr,
-  mb,
-  ml,
-  p,
-  px,
-  py,
-  pt,
-  pr,
-  pb,
-  pl,
-  children
-}) => {
+const Box = ({ m, mx, my, mt, mr, mb, ml, p, px, py, pt, pr, pb, pl, children }) => {
   return (
     <BoxStyled
       m={m}

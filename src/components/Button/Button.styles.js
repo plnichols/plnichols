@@ -51,29 +51,13 @@ const ButtonStyled = styled.button`
     props.outline &&
     css`
       background-color: transparent;
-      color: ${props.white
-        ? 'white'
-        : props.secondary
-          ? color.secondary.base
-          : color.primary.base};
-      border-color: ${props.white
-        ? 'white'
-        : props.secondary
-          ? color.secondary.base
-          : color.primary.base};
+      color: ${props.white ? 'white' : props.secondary ? color.secondary.base : color.primary.base};
+      border-color: ${props.white ? 'white' : props.secondary ? color.secondary.base : color.primary.base};
 
       &:hover {
         background-color: transparent;
-        color: ${props.white
-          ? 'white'
-          : props.secondary
-            ? color.secondary.dark
-            : color.primary.dark};
-        border-color: ${props.white
-          ? 'white'
-          : props.secondary
-            ? color.secondary.dark
-            : color.primary.dark};
+        color: ${props.white ? 'white' : props.secondary ? color.secondary.dark : color.primary.dark};
+        border-color: ${props.white ? 'white' : props.secondary ? color.secondary.dark : color.primary.dark};
       }
     `};
 

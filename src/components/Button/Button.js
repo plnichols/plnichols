@@ -1,19 +1,7 @@
 import React from 'react';
 import { ButtonStyled, AnchorStyled } from './Button.styles';
 
-const Button = ({
-  primary,
-  secondary,
-  white,
-  rounded,
-  disabled,
-  outline,
-  small,
-  large,
-  anchor,
-  children,
-  ...rest
-}) => {
+const Button = ({ primary, secondary, white, rounded, disabled, outline, small, large, anchor, children, ...rest }) => {
   const Component = anchor ? AnchorStyled : ButtonStyled;
 
   return (

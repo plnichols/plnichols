@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  H1Styled,
-  H2Styled,
-  H3Styled,
-  H4Styled,
-  H5Styled,
-  H6Styled
-} from './Heading.styles';
+import { H1Styled, H2Styled, H3Styled, H4Styled, H5Styled, H6Styled } from './Heading.styles';
 
 const Heading = ({ h1, h2, h3, h4, h5, h6, size, children }) => {
   if (h1) return <H1Styled {...size && { size }}>{children}</H1Styled>;

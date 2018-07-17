@@ -13,12 +13,18 @@ const Home = () => {
 
       <Divider my={80} />
 
+      <Box>
+        <Heading h2>Skills</Heading>
+        <Heading h3>Here's an overview of the technologies I'm particularly good at:</Heading>
+      </Box>
+
+      <Divider my={80} />
+
       <Box my={20}>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam
-          autem consequuntur deserunt doloremque harum illo nemo quae rerum
-          veritatis? Ab beatae esse neque qui quos repellendus. Accusantium,
-          placeat, voluptatem.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam autem consequuntur deserunt doloremque
+          harum illo nemo quae rerum veritatis? Ab beatae esse neque qui quos repellendus. Accusantium, placeat,
+          voluptatem.
         </p>
       </Box>
     </Box>

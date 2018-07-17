@@ -15,30 +15,27 @@ const StyleGuide = () => (
     <Divider />
 
     <Box m={5} mx={8} mt={2} p={20}>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, id
-      itaque molestias non quisquam reiciendis tempora! Adipisci aliquid amet
-      deserunt earum esse eveniet incidunt pariatur porro suscipit voluptatem.
-      Dolore, ut?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, id itaque molestias non quisquam reiciendis
+      tempora! Adipisci aliquid amet deserunt earum esse eveniet incidunt pariatur porro suscipit voluptatem. Dolore,
+      ut?
     </Box>
 
     <Box m={25}>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, id
-      itaque moleseniet incidunt pariatur porro suscipit voluptatem. Dolore, ut?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, id itaque moleseniet incidunt pariatur porro
+      suscipit voluptatem. Dolore, ut?
     </Box>
 
     <Box p={20} px={50}>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, id
-      itaque moleseniet incidunt pariatur porro suscipit voluptatem. Dolore, ut?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, id itaque moleseniet incidunt pariatur porro
+      suscipit voluptatem. Dolore, ut?
     </Box>
 
     <Divider />
 
     <p>
-      Paragraph lorem ipsum dolor sit amet, <em>adipiscing elit</em>. Aenean
-      commodo ligula eget dolor. Aenean massa <strong>strong</strong>. Cum im
-      justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum
-      felis eu pede <a href="#link">link</a> mollis pretium.{' '}
-      <u>Integer tincids nisi</u>.
+      Paragraph lorem ipsum dolor sit amet, <em>adipiscing elit</em>. Aenean commodo ligula eget dolor. Aenean massa{' '}
+      <strong>strong</strong>. Cum im justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu
+      pede <a href="#link">link</a> mollis pretium. <u>Integer tincids nisi</u>.
     </p>
 
     <Divider />

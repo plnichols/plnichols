@@ -3,22 +3,7 @@ import { Box } from 'components';
 
 export function withSpacing(Component) {
   return ({ ...rest }) => {
-    const spacingProps = [
-      'm',
-      'mx',
-      'my',
-      'mt',
-      'mr',
-      'mb',
-      'ml',
-      'p',
-      'px',
-      'py',
-      'pt',
-      'pr',
-      'pb',
-      'pl'
-    ];
+    const spacingProps = ['m', 'mx', 'my', 'mt', 'mr', 'mb', 'ml', 'p', 'px', 'py', 'pt', 'pr', 'pb', 'pl'];
     const keysProps = Object.keys({ ...rest });
 
     // check if HoC component was used with spacing props
