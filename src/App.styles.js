@@ -20,12 +20,8 @@ injectGlobal`
     color: ${color.text};
     background: ${color.primary.base};
     background: 
-    repeat-x linear-gradient(to bottom, ${color.primary.dark}, ${
-  color.primary.base
-} ) 0 0, 
-    repeat-x linear-gradient(to bottom, ${color.primary.base}, ${
-  color.primary.l800
-} ) 100% 100%,
+    repeat-x linear-gradient(to bottom, ${color.primary.dark}, ${color.primary.base} ) 0 0, 
+    repeat-x linear-gradient(to bottom, ${color.primary.base}, ${color.primary.l800} ) 100% 100%,
     linear-gradient(to bottom, ${color.primary.base}, ${color.primary.base} );
     background-size: 100% 800px, 100% 400px, 100% 100%; 
   }
