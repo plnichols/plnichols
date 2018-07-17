@@ -15,24 +15,27 @@ injectGlobal`
     padding: 0;
     font-size: 1.6em;
     line-height: 1.6;
-    font-weight: 400;
+    font-weight: 300;
     font-family: ${font.base};
     color: ${color.text};
-    background-color: ${color.bg};
+    background: ${color.primary.base};
+    background: 
+    repeat-x linear-gradient(to bottom, ${color.primary.dark}, ${
+  color.primary.base
+} ) 0 0, 
+    repeat-x linear-gradient(to bottom, ${color.primary.base}, ${
+  color.primary.l800
+} ) 100% 100%,
+    linear-gradient(to bottom, ${color.primary.base}, ${color.primary.base} );
+    background-size: 100% 800px, 100% 400px, 100% 100%; 
   }
 `;
 
 const AppStyled = styled.div`
   position: relative;
+  margin: 0 auto;
+  max-width: 900px;
   min-height: 100vh;
-  background: ${color.primary.base};
-  background: linear-gradient(
-    0deg,
-    ${color.primary.l800} 0%,
-    ${color.primary.base} 10%,
-    ${color.primary.base} 70%,
-    ${color.primary.dark} 100%
-  );
 `;
 
 export { AppStyled };

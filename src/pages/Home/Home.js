@@ -1,16 +1,27 @@
 import React from 'react';
+import { Box, Divider, Heading, Hero } from 'components';
 
 const Home = () => {
   return (
-    <div>
-      <h1>Home</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad
-        alias asperiores at cum debitis dicta, ea, eius, explicabo laudantium
-        magni maxime mollitia nemo numquam odio placeat quis voluptas
-        voluptatibus.
-      </p>
-    </div>
+    <Box mt={50}>
+      <Hero>
+        <Heading h1>Hi.</Heading>
+        <Heading h2>I'm Pierre Luc Nichols</Heading>
+        <Heading h3>Front End Developer</Heading>
+        <Heading h4>London, UK</Heading>
+      </Hero>
+
+      <Divider my={80} />
+
+      <Box my={20}>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam
+          autem consequuntur deserunt doloremque harum illo nemo quae rerum
+          veritatis? Ab beatae esse neque qui quos repellendus. Accusantium,
+          placeat, voluptatem.
+        </p>
+      </Box>
+    </Box>
   );
 };
 
