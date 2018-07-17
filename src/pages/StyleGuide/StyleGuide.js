@@ -1,14 +1,35 @@
 import React from 'react';
-import { Button, Divider, Heading, List, ListItem } from 'components';
+import { Box, Button, Divider, Heading, List, ListItem } from 'components';
 
 const StyleGuide = () => (
   <div>
-    <Heading h1>H1 Lorem ipsum sit dolor</Heading>
-    <Heading h2>H2 Aenean commodo li</Heading>
-    <Heading h3>H3 Aedolor aenean massa</Heading>
-    <Heading h4>H4 Aeo ligula eget do massa</Heading>
-    <Heading h5>H5 Aeget dolor assa</Heading>
-    <Heading h6>H6 Digula eget dolor ae</Heading>
+    <Box mt={40}>
+      <Heading h1>H1 Lorem ipsum sit dolor</Heading>
+      <Heading h2>H2 Aenean commodo li</Heading>
+      <Heading h3>H3 Aedolor aenean massa</Heading>
+      <Heading h4>H4 Aeo ligula eget do massa</Heading>
+      <Heading h5>H5 Aeget dolor assa</Heading>
+      <Heading h6>H6 Digula eget dolor ae</Heading>
+    </Box>
+
+    <Divider />
+
+    <Box m={5} mx={8} mt={2} p={20}>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, id
+      itaque molestias non quisquam reiciendis tempora! Adipisci aliquid amet
+      deserunt earum esse eveniet incidunt pariatur porro suscipit voluptatem.
+      Dolore, ut?
+    </Box>
+
+    <Box m={25}>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, id
+      itaque moleseniet incidunt pariatur porro suscipit voluptatem. Dolore, ut?
+    </Box>
+
+    <Box p={20} px={50}>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, id
+      itaque moleseniet incidunt pariatur porro suscipit voluptatem. Dolore, ut?
+    </Box>
 
     <Divider />
 

@@ -1,3 +1,4 @@
+export { Box } from './Box/Box';
 export { Button } from './Button/Button';
 export { Content } from './Content/Content';
 export { Divider } from './Divider/Divider';
