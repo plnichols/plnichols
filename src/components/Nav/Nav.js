@@ -11,9 +11,6 @@ const Nav = () => {
       <NavItemStyled>
         <Link to="/styleguide">Style Guide</Link>
       </NavItemStyled>
-      <NavItemStyled>
-        <Link to="/topics">Topics</Link>
-      </NavItemStyled>
     </NavStyled>
   );
 };
