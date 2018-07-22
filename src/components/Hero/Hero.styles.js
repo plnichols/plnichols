@@ -22,7 +22,7 @@ const HeroStyled = styled.div`
     font-size: 5vw;
 
     ${media.up.md`
-      font-size: 5rem;
+      font-size: 4.5rem;
     `};
   }
 
@@ -30,7 +30,7 @@ const HeroStyled = styled.div`
     font-size: 3.5vw;
 
     ${media.up.md`
-      font-size: 3.5rem;
+      font-size: 3rem;
     `};
   }
 `;

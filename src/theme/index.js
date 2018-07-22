@@ -2,8 +2,6 @@ import { css } from 'styled-components';
 
 export const color = {
   text: '#f1fbff',
-  textLight: '#fff',
-  textDark: '#000',
   grey: '#aaa',
   lightGrey: '#ddd',
   darkGrey: '#666',
