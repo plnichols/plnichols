@@ -1,11 +1,11 @@
 import React from 'react';
-import { withSpacing } from 'hoc';
+import { WithSpacing } from 'hoc';
 import { DividerStyled } from './Divider.styles';
 
-const DividerComponent = ({ size }) => {
-  return <DividerStyled size={size} />;
+const DividerComponent = ({ ...rest }) => {
+  return <DividerStyled {...rest} />;
 };
 
-const Divider = withSpacing(DividerComponent);
+const Divider = WithSpacing(DividerComponent);
 
 export { Divider };
