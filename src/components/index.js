@@ -4,6 +4,7 @@ export { Content } from './Content/Content';
 export { Divider } from './Divider/Divider';
 export { Heading } from './Heading/Heading';
 export { Hero } from './Hero/Hero';
+export { Icon } from './Icon/Icon';
 export { List } from './List/List';
 export { ListItem } from './ListItem/ListItem';
 export { Nav } from './Nav/Nav';
