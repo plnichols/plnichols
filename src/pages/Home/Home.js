@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Divider, Heading, Hero } from 'components';
+import { Box, Divider, Heading, Hero, Icon } from 'components';
 
 const Home = () => {
   return (
@@ -16,6 +16,20 @@ const Home = () => {
       <Box>
         <Heading h2>Skills</Heading>
         <Heading h3>Here's an overview of the technologies I'm particularly good at:</Heading>
+      </Box>
+
+      <Box my={40}>
+        <Icon type="html" style={{ padding: '5px' }} />
+        <Icon type="css" />
+        <Icon type="git" />
+        <Icon type="codepen" />
+        <Icon type="linkedin" />
+        <Icon type="github" />
+        <Icon type="code" />
+        <Icon type="mobile" />
+        <Icon type="react" size={64} />
+        <Icon type="angular" width={16} />
+        <Icon type="webpack" height={64} size={128} />
       </Box>
 
       <Divider my={80} />
