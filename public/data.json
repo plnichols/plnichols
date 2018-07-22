@@ -1,0 +1,64 @@
+{
+  "skills": [
+    {
+      "icon": "html",
+      "name": "HTML5",
+      "description": "Clean and semantic HTML markup in line with W3C standards that are easily maintainable and follow WAI-ARIA accessibility guidelines.",
+      "value": "97"
+    },
+    {
+      "icon": "javascript",
+      "name": "Javascript / ES6",
+      "description": "Modern Javascript development using latest ES6 features and following industry best practices such as DRY, modular, KISS, object oriented, etc...",
+      "value": "92"
+    },
+    {
+      "icon": "css",
+      "name": "CSS3",
+      "description": "Scalable and maintainable CSS stylesheets, using BEM (or alternatives such as OOCCS) as the foundation for projects of all sizes.",
+      "value": "96"
+    },
+    {
+      "icon": "react",
+      "name": "React",
+      "description": "Commercial experience (+1 year) developing React applications and shared UI components libraries built using React and Styled-Components (CSS-in-JS).",
+      "value": "85"
+    },
+    {
+      "icon": "mobile",
+      "name": "Responsive Design",
+      "description": "Mobile-first, user-friendly and responsive UI development using progressive enhancement with a focus on performance.",
+      "value": "95"
+    },
+    {
+      "icon": "sass",
+      "name": "Sass",
+      "description": "In-depth knowledge of Sass features (and Less) to help create a more streamlined development workflow which enforces code re-use.",
+      "value": "93"
+    },
+    {
+      "icon": "git",
+      "name": "Git",
+      "description": "Familiar with Git (command line and GUI) and commonly used branching models, merging, rebasing in order to keep a clean history.",
+      "value": "88"
+    },
+    {
+      "icon": "webpack",
+      "name": "Webpack",
+      "description": "Setup Webpack configurations for dev/production build scripts to import, bundle, minify and minimise all application assets (js, css, fonts, svg, images, etc...)",
+      "value": "82"
+    },
+    {
+      "icon": "npm",
+      "name": "NPM",
+      "description": "Experienced with NPM and npm scripts in all my recent projects to automate dev/build process",
+      "value": "80"
+    },
+    {
+      "icon": "angular",
+      "name": "AngularJS",
+      "description": "Previous experience with Angular 1.x on small projects and more complex data-driven SPA (single page application) including unit testing using Jasmine and Karma.",
+      "value": "70"
+    }
+  ]
+}

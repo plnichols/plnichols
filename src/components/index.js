@@ -8,3 +8,4 @@ export { Icon } from './Icon/Icon';
 export { List } from './List/List';
 export { ListItem } from './ListItem/ListItem';
 export { Nav } from './Nav/Nav';
+export { Skills } from './Skills/Skills';
