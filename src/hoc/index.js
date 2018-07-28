@@ -1,1 +1,1 @@
-export { WithSpacing } from './spacing';
+export { WithSpacing } from './Spacing/Spacing';
