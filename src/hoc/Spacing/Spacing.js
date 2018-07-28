@@ -37,5 +37,6 @@ export function WithSpacing(Component) {
   };
 
   withSpacing.displayName = `withSpacing(${Component.displayName || Component.name || 'Component'})`;
+
   return withSpacing;
 }

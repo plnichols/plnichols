@@ -19,7 +19,7 @@ class Skills extends Component {
   }
 
   componentDidMount() {
-    fetch('/data.json')
+    fetch('/data/skills.json')
       .then(this.handleResponse)
       .then(this.handleJson.bind(this))
       .catch(this.handleError);
