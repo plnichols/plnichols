@@ -1,25 +1,16 @@
 import styled from 'styled-components';
-import { color } from 'theme';
-
-const FooterStyled = styled.footer`
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 80px;
-`;
+import { color, media } from 'theme';
 
 const FooterCopyrightStyled = styled.div`
   flex: 1 0 auto;
-  padding: 10px 20px;
   width: 100%;
   font-size: 12px;
   text-align: center;
-  color: ${color.primary.l600};
+  color: ${color.primary.l500};
+
+  ${media.up.xs`
+    text-align: left;
+  `};
 `;
 
-const FooterIconsStyled = styled.div`
-  flex: 1 0 auto;
-  padding: 10px 20px 20px;
-  width: 100%;
-`;
-
-export { FooterStyled, FooterCopyrightStyled, FooterIconsStyled };
+export { FooterCopyrightStyled };

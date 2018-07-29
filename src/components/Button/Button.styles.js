@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 import { color } from 'theme';
+import { rgba } from 'polished';
 
 const ButtonStyled = styled.button`
   display: inline-block;
@@ -36,14 +37,14 @@ const ButtonStyled = styled.button`
   ${props =>
     props.white &&
     css`
-      color: ${props.secondary ? color.secondary.base : color.primary.base};
+      color: ${color.primary.base};
       background-color: white;
       border-color: white;
 
       &:hover {
-        color: ${props.secondary ? color.secondary.dark : color.primary.dark};
-        background-color: white;
-        border-color: white;
+        color: ${color.primary.dark};
+        background-color: ${rgba('white', 0.8)};
+        border-color: ${color.primary.l100};
       }
     `};
 
@@ -55,8 +56,8 @@ const ButtonStyled = styled.button`
       border-color: ${props.white ? 'white' : props.secondary ? color.secondary.base : color.primary.base};
 
       &:hover {
-        background-color: transparent;
-        color: ${props.white ? 'white' : props.secondary ? color.secondary.dark : color.primary.dark};
+        background-color: ${props.white ? 'white' : props.secondary ? color.secondary.dark : color.primary.dark};
+        color: ${props.white ? color.primary.dark : 'white'};
         border-color: ${props.white ? 'white' : props.secondary ? color.secondary.dark : color.primary.dark};
       }
     `};
@@ -65,14 +66,15 @@ const ButtonStyled = styled.button`
     props.disabled &&
     css`
       color: white;
-      background-color: ${color.lightGrey};
-      border-color: ${color.lightGrey};
+      background-color: ${rgba(color.lightGrey, 0.6)};
+      border-color: transparent;
       cursor: not-allowed;
+      opacity: 0.8;
 
       &:hover {
         color: white;
-        background-color: ${color.lightGrey};
-        border-color: ${color.lightGrey};
+        background-color: ${rgba(color.lightGrey, 0.6)};
+        border-color: transparent;
       }
     `};
 
@@ -88,15 +90,16 @@ const ButtonStyled = styled.button`
       font-size: 11px;
       padding: 3px 15px 2px;
     `};
-
-  ${props =>
-    props.large &&
-    css`
-      font-size: 18px;
-      padding: 12px 40px;
-    `};
 `;
 
-const AnchorStyled = ButtonStyled.withComponent('a');
+const AnchorComponent = ButtonStyled.withComponent('a');
+
+const AnchorStyled = AnchorComponent.extend`
+  color: ${props => (props.white ? (props.outline ? 'white' : color.primary.dark) : 'white')};
+
+  &:hover {
+    color: ${props => (props.white ? color.primary.dark : 'white')};
+  }
+`;
 
 export { ButtonStyled, AnchorStyled };
