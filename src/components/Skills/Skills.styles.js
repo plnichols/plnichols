@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Icon } from 'components';
 import { color } from 'theme';
+import { lighten } from 'polished';
 
 const SkillsStyled = styled.ul`
   margin: 0;
@@ -54,11 +55,11 @@ const SkillsProgressStyled = styled.progress`
   width: 100%;
   height: 8px;
   margin-top: 13px;
-  color: #00a1d6;
+  color: ${color.primary.base};
   appearance: none;
   border: none;
   border-radius: 3px;
-  background-color: ${color.primary.base};
+  background-color: ${lighten(0.025, color.primary.base)};
 
   &::-webkit-progress-bar {
     border-radius: 3px;
@@ -73,7 +74,7 @@ const SkillsProgressStyled = styled.progress`
 
   &::-moz-progress-bar {
     border-radius: 3px;
-    background: linear-gradient(to right, #00a1d6, #3dcfff);
+    background: linear-gradient(to right, ${color.primary.l500}, ${color.primary.l100});
   }
 `;
 

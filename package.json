@@ -27,6 +27,11 @@
       "git add"
     ]
   },
+  "jest": {
+    "moduleNameMapper": {
+      "(.*)$": "<rootDir>/src/$1"
+    }
+  },
   "scripts": {
     "precommit": "lint-staged",
     "start": "react-app-rewired start",

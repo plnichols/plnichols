@@ -3,6 +3,7 @@ export { Button } from './Button/Button';
 export { Content } from './Content/Content';
 export { Divider } from './Divider/Divider';
 export { Footer } from './Footer/Footer';
+export { Row, Col } from './Grid/Grid';
 export { Heading } from './Heading/Heading';
 export { Hero } from './Hero/Hero';
 export { Icon } from './Icon/Icon';

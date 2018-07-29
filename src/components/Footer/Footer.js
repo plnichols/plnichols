@@ -1,15 +1,19 @@
 import React from 'react';
-import { Social } from 'components';
-import { FooterStyled, FooterCopyrightStyled, FooterIconsStyled } from './Footer.styles';
+import { Box, Social, Row, Col } from 'components';
+import { FooterCopyrightStyled } from './Footer.styles';
 
 const Footer = () => {
   return (
-    <FooterStyled>
-      <FooterCopyrightStyled>Copyright &copy; 2018</FooterCopyrightStyled>
-      <FooterIconsStyled>
-        <Social />
-      </FooterIconsStyled>
-    </FooterStyled>
+    <Box mt={80} mb={20}>
+      <Row>
+        <Col>
+          <FooterCopyrightStyled>&copy; 2018 Pierre Luc Nichols</FooterCopyrightStyled>
+        </Col>
+        <Col>
+          <Social />
+        </Col>
+      </Row>
+    </Box>
   );
 };
 

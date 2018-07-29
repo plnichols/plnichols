@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import { Home, StyleGuide } from 'pages';
-import { Nav, Content, Footer } from 'components';
+import { Content, Footer } from 'components';
 import { AppStyled } from './App.styles';
 
 class App extends Component {
@@ -9,12 +9,11 @@ class App extends Component {
     return (
       <BrowserRouter>
         <AppStyled>
-          <Nav />
           <Content>
             <Route exact path="/" component={Home} />
             <Route path="/styleguide" component={StyleGuide} />
+            <Footer />
           </Content>
-          <Footer />
         </AppStyled>
       </BrowserRouter>
     );
