@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <Box mt={50}>
       <Hero>
-        <Heading h1>Hi.</Heading>
+        <Heading h1>Hi</Heading>
         <Heading h2>I'm Pierre Luc Nichols</Heading>
         <Heading h3>Front End Developer</Heading>
         <Heading h4>London, UK</Heading>
