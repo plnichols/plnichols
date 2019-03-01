@@ -7,7 +7,7 @@ const Footer = () => {
     <Box mt={80} mb={20}>
       <Row>
         <Col>
-          <FooterCopyrightStyled>&copy; 2018 Pierre Luc Nichols</FooterCopyrightStyled>
+          <FooterCopyrightStyled>&copy; 2019 Pierre Luc Nichols</FooterCopyrightStyled>
         </Col>
         <Col>
           <Social />
