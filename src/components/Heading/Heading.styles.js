@@ -9,16 +9,16 @@ const BaseHeading = styled.span`
   color: ${color.text};
 `;
 
-const H1Styled = BaseHeading.withComponent('h1').extend`
+const H1Styled = styled(BaseHeading)`
   font-size: ${props => props.size || '5rem'};
 `;
 
-const H2Styled = BaseHeading.withComponent('h2').extend`
+const H2Styled = styled(BaseHeading)`
   font-size: ${props => props.size || '4rem'};
   margin-bottom: 1rem;
 `;
 
-const H3Styled = BaseHeading.withComponent('h3').extend`
+const H3Styled = styled(BaseHeading)`
   font-size: ${props => props.size || '2.8rem'};
   font-weight: 100;
   margin-bottom: 1rem;
@@ -26,7 +26,7 @@ const H3Styled = BaseHeading.withComponent('h3').extend`
   letter-spacing: -0.5px;
 `;
 
-const H4Styled = BaseHeading.withComponent('h4').extend`
+const H4Styled = styled(BaseHeading)`
   font-size: ${props => props.size || '2.4rem'};
   font-weight: 100;
   margin-bottom: 1rem;
@@ -34,7 +34,7 @@ const H4Styled = BaseHeading.withComponent('h4').extend`
   letter-spacing: -0.3px;
 `;
 
-const H5Styled = BaseHeading.withComponent('h5').extend`
+const H5Styled = styled(BaseHeading)`
   font-size: ${props => props.size || '1.8rem'};
   font-weight: 100;
   margin-bottom: 1.25rem;
@@ -42,7 +42,7 @@ const H5Styled = BaseHeading.withComponent('h5').extend`
   letter-spacing: -0.3px;
 `;
 
-const H6Styled = BaseHeading.withComponent('h6').extend`
+const H6Styled = styled(BaseHeading)`
   font-size: ${props => props.size || '1.5rem'};
   font-weight: 100;
   margin-bottom: 1.25rem;
