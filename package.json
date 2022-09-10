@@ -1,46 +1,24 @@
 {
   "name": "plnichols",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
-  "proxy": "http://localhost:4000",
-  "homepage": "https://plnichols.github.io",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
   "dependencies": {
-    "gh-pages": "^1.2.0",
-    "husky": "^0.14.3",
-    "lint-staged": "^7.2.0",
-    "polished": "^1.9.3",
-    "prettier": "^1.13.7",
-    "react": "^16.4.1",
-    "react-app-rewire-styled-components": "^3.0.2",
-    "react-dom": "^16.4.1",
-    "react-router-dom": "^4.3.1",
-    "styled-components": "^4.1.3",
-    "styled-normalize": "^8.0.6"
+    "date-fns": "^2.29.2",
+    "gray-matter": "^4.0.3",
+    "next": "latest",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "remark": "^14.0.2",
+    "remark-html": "^15.0.1"
   },
   "devDependencies": {
-    "babel-plugin-module-resolver": "^3.1.1",
-    "json-server": "^0.14.0",
-    "react-app-rewired": "^1.5.2",
-    "react-scripts": "1.1.4"
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx,json,css}": [
-      "prettier --write ",
-      "git add"
-    ]
-  },
-  "jest": {
-    "moduleNameMapper": {
-      "(.*)$": "<rootDir>/src/$1"
-    }
-  },
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
-    "precommit": "lint-staged",
-    "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
-    "test": "react-app-rewired test --env=jsdom",
-    "eject": "react-scripts eject"
+    "@types/node": "18.7.16",
+    "@types/react": "18.0.19",
+    "typescript": "4.8.3"
   }
 }
