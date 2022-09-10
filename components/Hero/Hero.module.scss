@@ -1,0 +1,35 @@
+@import '../../styles/_breakpoints';
+
+.hero {
+  h1 {
+    font-size: 22vw;
+
+    @media (min-width: $breakpoint-medium) {
+      font-size: 22rem;
+    }
+  }
+
+  h2 {
+    font-size: 9vw;
+
+    @media (min-width: $breakpoint-medium) {
+      font-size: 9rem;
+    }
+  }
+
+  h3 {
+    font-size: 5vw;
+
+    @media (min-width: $breakpoint-medium) {
+      font-size: 4.5rem;
+    }
+  }
+
+  h4 {
+    font-size: 3.5vw;
+
+    @media (min-width: $breakpoint-medium) {
+      font-size: 3rem;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+@import '../../styles/_breakpoints';
+@import '../../styles/colors';
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  margin: 100px 0 20px;
+  font-size: 12px;
+  text-align: center;
+  color: $primary-l500;
+
+  @media (min-width: $breakpoint-xsmall) {
+    flex-wrap: nowrap;
+  }
+}
+
+.left {
+  flex: 1 0 auto;
+  width: 100%;
+  text-align: center;
+
+  @media (min-width: $breakpoint-xsmall) {
+    width: 50%;
+    text-align: left;
+  }
+}
+
+.right {
+  flex: 1 0 auto;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+
+  @media (min-width: $breakpoint-xsmall) {
+    width: 50%;
+    text-align: right;
+    margin-top: 0;
+  }
+}
