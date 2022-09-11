@@ -8,6 +8,7 @@ import Divider from '../components/Divider/Divider';
 import Heading from '../components/Heading/Heading';
 import Hero from '../components/Hero/Hero';
 import Footer from '../components/Footer/Footer';
+import Skills from '../components/Skills/Skills';
 
 interface Props {
   allPostsData: PostData[];
@@ -47,7 +48,9 @@ export default function Home({ allPostsData }: Props) {
           <Heading h2>Skills</Heading>
           <Heading h3>Here's an overview of the technologies I'm particularly good at:</Heading>
 
-          <Box my={60}>{/* <Skills /> */}</Box>
+          <Box my={60}>
+            <Skills />
+          </Box>
 
           <Divider top={80} bottom={80} />
 

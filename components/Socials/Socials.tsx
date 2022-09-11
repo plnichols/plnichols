@@ -2,7 +2,6 @@ import React, { ReactElement, useEffect, useState } from 'react';
 import { utilsFetch } from '../../utils/fetch';
 import styles from './Socials.module.scss';
 import Icon from '../Icon/Icon';
-import Loader from '../Loader/Loader';
 
 interface Social {
   icon: 'codepen' | 'linkedin' | 'github';
