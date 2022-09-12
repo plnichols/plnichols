@@ -56,7 +56,7 @@ export default function Home({ allPostsData }: Props) {
 
           <Box my={60}>
             <Heading h2>Let's talk!</Heading>
-            <Heading h3>Get in touch to enquire about my availability</Heading>
+            <Heading h3>Get in touch to discuss how I can help on your project</Heading>
 
             <Box my={30}>
               <Button anchor white outline href="mailto:pierrelucnichols&#64;gmail&#46;com">
